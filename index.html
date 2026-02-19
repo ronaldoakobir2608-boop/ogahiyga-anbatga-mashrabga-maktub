@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mumtoz Adabiyot Loyiha</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=EB+Garamond&display=swap" rel="stylesheet">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+body {
+    font-family:'EB Garamond',serif;
+    background-image:url('https://images.unsplash.com/photo-1512820790803-83ca734da794');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    color:#3b2f2f;
+}
+body::before {
+    content:"";
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
+}
+header {
+    text-align:center;
+    padding:50px 20px;
+    color:#fff8dc;
+}
+header h1 {
+    font-family:'Cinzel',serif;
+    font-size:36px;
+    letter-spacing:2px;
+}
+.container {
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+.card {
+    background:#f5e6c8;
+    padding:20px;
+    position:relative;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    border-radius:6px;
+    margin-bottom:30px;
+}
+.card::before {
+    content:"";
+    position:absolute;
+    top:-10px;left:-10px;right:-10px;bottom:-10px;
+    background:radial-gradient(circle at 10% 10%,#2b1a0d 0%,transparent 40%),
+               radial-gradient(circle at 90% 90%,#2b1a0d 0%,transparent 40%),
+               radial-gradient(circle at 50% 0%,#2b1a0d 0%,transparent 40%),
+               radial-gradient(circle at 0% 80%,#2b1a0d 0%,transparent 40%);
+    z-index:-1;
+    filter:blur(10px);
+}
+.image-box {
+    width:100%;
+    max-height:300px;
+    overflow:hidden;
+    border:3px solid #4a2c12;
+    margin-bottom:15px;
+    border-radius:4px;
+}
+.image-box img {
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:cover;
+}
+h2 {
+    font-family:'Cinzel',serif;
+    margin-bottom:10px;
+    color:#4b2e05;
+    text-align:center;
+}
+button {
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    background:#4a2c12;
+    color:#ffd700;
+    font-weight:bold;
+    cursor:pointer;
+    font-family:'Cinzel',serif;
+    display:block;
+    width:100%;
+}
+button:hover {
+    background:#2b1a0d;
+    color:#ffffff;
+}
+.letter {
+    margin-top:15px;
+    display:none;
+    white-space:pre-line;
+    line-height:1.8;
+    text-align:justify;
+    font-size:15px;
+}
+footer {
+    text-align:center;
+    padding:15px;
+    color:#fff8dc;
+    font-size:14px;
+}
+/* RESPONSIVE */
+@media screen and (max-width:768px){
+    header h1 {font-size:28px;}
+    .card {padding:15px;}
+    button {padding:8px;}
+    .letter {font-size:14px;}
+}
+@media screen and (max-width:480px){
+    header h1 {font-size:22px;}
+    .letter {font-size:13px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Mumtoz Adabiyot Namoyandalariga Maktublar</h1>
+</header>
+
+<div class="container">
+
+<div class="card">
+  <div class="image-box">
+    <img src="ogahiy.jpg" alt="Ogahiy">
+  </div>
+  <h2>Muhammad Rizo Ogahiy (1809–1874)</h2>
+  <button onclick="toggleLetter('ogahiy')">Maktublarni ko‘rsatish</button>
+  <div id="ogahiy" class="letter">
+    <p>Hurmatli Ogahiy hazratlari!</p>
+    <p>Men Sizga murojaat qilmoqdaman. Sizning tarixiy merosingizni o‘qir ekanman, har safar yangi ma’no topaman. Asarlaringiz orqali biz nafaqat tarixni, balki o‘sha davr insonlarining orzu-umidlarini ham his qilamiz.</p>
+    <p>Siz yaratgan tarixiy bitiklar xalqimizning o‘tmishini yorituvchi mash’aladir. Har bir jumlangiz aniqlik, adolat va ilmga sadoqat bilan yozilgan. Sizning mehnatingiz tufayli biz ajdodlarimizning siyosiy, madaniy va ma’naviy hayotini chuqurroq anglaymiz.</p>
+    <p>Men ham ilm olishga harakat qilaman. Chunki Sizning hayotingiz shuni ko‘rsatadiki, haqiqiy inson o‘z xalqiga ilm orqali xizmat qiladi. Sizning sabr-toqatingiz, izlanishlaringiz va fidoyiligingiz meni ilhomlantiradi.</p>
+    <p>Siz yozgan g‘azallarda esa nozik tuyg‘ular, insoniylik va hayot falsafasi mujassam. Har bir satr qalbga yetib boradi. Men Sizning asarlaringizni o‘qib, o‘zimni yanada bilimli va ongli his qilaman.</p>
+    <p>Hurmat bilan, zamonaviy avlod vakili.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-box">
+    <img src="images.jpg" alt="Anbar Otin">
+  </div>
+  <h2>Anbar Otin (1870–1915)</h2>
+  <button onclick="toggleLetter('anbar')">Maktublarni ko‘rsatish</button>
+  <div id="anbar" class="letter">
+    <p>Assalomu alaykum, Anbar Otin!</p>
+    <p>Sizning jasoratingiz va ma’rifatparvarlik faoliyatingiz haqida o‘qiganim sari hurmatim ortmoqda. O‘sha davrda ayollar uchun ilm olish oson emas edi. Shunga qaramay, Siz qat’iyat bilan oldinga intilgansiz.</p>
+    <p>Siz she’rlaringiz orqali jamiyatni uyg‘otishga harakat qilgansiz. Ilm, axloq va tarbiya masalalarini ko‘targansiz. Bu esa Sizning naqadar uzoqni ko‘ra olgan inson bo‘lganingizni ko‘rsatadi.</p>
+    <p>Bugungi kunda biz erkin ta’lim olayotgan bo‘lsak, bu kabi jasoratli ayollar sababdir. Men ham Siz kabi qat’iyatli, sabrli va ilmga chanqoq bo‘lishni istayman.</p>
+    <p>Sizning hayotingiz – bu matonat va fidoyilik timsolidir. Sizning nomingiz qalbimizda yashaydi.</p>
+    <p>Hurmat bilan, minnatdor o‘quvchi.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="image-box">
+    <img src="mashrab__author_kutubxonachi.uz.jpg" alt="Mashrab">
+  </div>
+  <h2>Boborahim Mashrab (1657–1711)</h2>
+  <button onclick="toggleLetter('mashrab')">Maktublarni ko‘rsatish</button>
+  <div id="mashrab" class="letter">
+    <p>Ey Mashrab bobom!</p>
+    <p>Sizning she’rlaringizni o‘qir ekanman, qalbimda kuchli ruhiy to‘lqin paydo bo‘ladi. Siz haqiqatni qo‘rqmasdan aytgan, e’tiqodingizni himoya qilgan jasoratli shoir bo‘lgansiz.</p>
+    <p>Hayotingiz sinovlarga to‘la bo‘lsa-da, Siz ruhiy erkinligingizni yo‘qotmagansiz. Bu meni sabrli va matonatli bo‘lishga undaydi. Sizning g‘azallaringizda samimiyat, ishq va haqiqat mujassam.</p>
+    <p>Men ham hayotda to‘g‘ri yo‘ldan yurishni, adolat tarafida bo‘lishni va har doim rost so‘zlashni o‘zimga maqsad qilganman.</p>
+    <p>Sizdan o‘rganadigan saboqlar juda ko‘p. Sizning merosingiz biz bilan yashaydi.</p>
+    <p>Hurmat bilan, Sizni qadrlovchi o‘quvchi.</p>
+  </div>
+</div>
+
+</div>
+
+<footer>
+YARATUVCHI; MAHAMADSHARIPOV AKOBIR
+</footer>
+
+<script>
+function toggleLetter(id){
+  var letters=document.querySelectorAll('.letter');
+  letters.forEach(function(el){
+    if(el.id!==id){el.style.display='none';}
+  });
+  var x=document.getElementById(id);
+  x.style.display=(x.style.display==='block')?'none':'block';
+}
+</script>
+
+</body>
+</html>
